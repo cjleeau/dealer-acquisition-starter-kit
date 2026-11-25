@@ -2,6 +2,8 @@
 
 A free, open starter kit for small car dealerships that want a simple way to buy cars from private sellers. It contains a set of screen designs and a detailed build script. Hand both to an AI coding tool ([Claude Code](https://docs.claude.com/en/docs/claude-code/overview), [Cursor](https://cursor.com), [Lovable](https://lovable.dev), [Bolt](https://bolt.new), [v0](https://v0.dev) or similar) and it has everything it needs to build a working first version.
 
+**Download the latest version from [Releases](https://github.com/cjleeau/dealer-acquisition-starter-kit/releases/latest).**
+
 This kit is part of the LinkedIn series *Dealership AI, one feature at a time* by [Chris Lee](https://www.linkedin.com/in/christopherjustinlee). It is not a product and there is nothing to buy.
 
 ---
@@ -24,8 +26,8 @@ Reminders, automatic follow-ups that stop as soon as the seller replies, opt-out
 | File | What it is |
 |---|---|
 | `README.md` | This file |
-| `acquisition-mvp-build-script.md` | The build script. A precise specification for an AI coding tool: data model, screens, exact wording, statuses, SMS templates, audit log, privacy rules, acceptance criteria and build order |
-| `design/acquisition-flow-mockups.html` | The screen designs: five seller screens on a phone, the buyer's desk, and the offer and sign screen on a tablet. Open it in any browser |
+| `BUILD-SCRIPT.md` | The build script. A precise specification for an AI coding tool: data model, screens, exact wording, statuses, SMS templates, audit log, privacy rules, acceptance criteria and build order |
+| `acquisition-flow-design.html` | The screen designs: five seller screens on a phone, the buyer's desk, and the offer and sign screen on a tablet. Open it in any browser |
 
 ---
 
@@ -43,9 +45,9 @@ This repo is a blueprint, not the app itself. Nothing here runs on its own.
 
 1. **Read the build script first.** It takes about 20 minutes and tells you exactly what will be built, and what will not.
 2. **Create an empty project folder** on your computer, or a new project in your browser-based tool.
-3. **Give the AI coding tool both files.** Put `acquisition-mvp-build-script.md` and the mockups file into the project, then ask:
+3. **Give the AI coding tool both files.** Put `BUILD-SCRIPT.md` and `acquisition-flow-design.html` into the project, then ask:
 
-   > Read `acquisition-mvp-build-script.md` and open the mockups in `design/`. Follow section 0 of the script exactly. Start with phase 1 of the build order in section 15, and stop when phase 1 is finished so I can review it.
+   > Read `BUILD-SCRIPT.md` and open the mockups in `acquisition-flow-design.html`. Follow section 0 of the script exactly. Start with phase 1 of the build order in section 15, and stop when phase 1 is finished so I can review it.
 
 4. **Build one phase at a time.** Check each phase against the acceptance criteria in section 14 before asking for the next one. Do not let the tool skip ahead.
 5. **Test with the sample data.** The script includes a seed command that loads fake sellers and fake cars. While sample data is loaded, SMS messages are logged but never sent.
